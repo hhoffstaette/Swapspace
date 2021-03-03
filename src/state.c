@@ -51,7 +51,7 @@ static time_t cooldown_time = 600;
 static time_t timer = 0;
 
 static inline void timer_reset(void) { timer = cooldown_time; }
-static inline void timer_tick(void) { --timer; }
+static inline void timer_tick(void) { timer -= WAKEUP_INTERVAL; }
 static inline bool timer_timeout(void) { return timer <= 0; }
 
 #ifndef NO_CONFIG

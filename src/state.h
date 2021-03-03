@@ -22,6 +22,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 #ifndef SWAPSPACE_STATE_H
 #define SWAPSPACE_STATE_H
 
+/// State machine wakeup interval
+#define WAKEUP_INTERVAL 2
+
 /// Perform one iteration of the allocation algorithm.  Clobbers localbuf.
 void handle_requirements(void);
 

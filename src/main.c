@@ -349,7 +349,7 @@ int main(int argc, char *argv[])
     else if (unlikely(adjust_swap))	adjust_swap = false,	request_diet();
     else 			        handle_requirements();
 
-    sleep(1);
+    sleep(WAKEUP_INTERVAL);
   }
 
   int result = EXIT_SUCCESS;
