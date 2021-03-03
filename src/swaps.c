@@ -459,7 +459,6 @@ int set_no_cow(int fd)
     if (errno == ENOTSUP)
     {
       nocow_ok = false;
-      logm(LOG_NOTICE, "NOCOW attribute not supported!");
     }
     else return err;
   }
